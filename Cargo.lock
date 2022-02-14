@@ -1055,11 +1055,20 @@ dependencies = [
 
 [[package]]
 name = "libseccomp"
-version = "0.0.2"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "49bda1fbf25c42ac8942ff7df1eb6172a3bc36299e84be0dba8c888a7db68c80"
 dependencies = [
  "libc",
+ "libseccomp-sys",
  "pkg-config",
 ]
+
+[[package]]
+name = "libseccomp-sys"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9a7cbbd4ad467251987c6e5b47d53b11a5a05add08f2447a9e2d70aef1e0d138"
 
 [[package]]
 name = "libz-sys"
